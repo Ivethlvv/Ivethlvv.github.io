@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Explora la Biblioteca</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="estilos.css" rel="stylesheet">
+</head>
+
+<body class="bg-dark text-light">
+  <div class="container py-5">
+    <h2 class="text-center mb-5">🔍 Explora los secretos escondidos</h2>
+
+    <div class="row text-center">
+      <!-- Objeto 1: Libro antiguo -->
+      <div class="col-md-4 mb-4">
+        <a href="#" onclick="mostrarContenido('libro')">
+          <img src="https://cdn-icons-png.flaticon.com/512/29/29302.png" alt="Libro antiguo" width="100">
+          <p>Libro antiguo</p>
+        </a>
+      </div>
+
+      <!-- Objeto 2: Vinilo -->
+      <div class="col-md-4 mb-4">
+        <a href="#" onclick="mostrarContenido('vinilo')">
+          <img src="https://cdn-icons-png.flaticon.com/512/1995/1995515.png" alt="Vinilo" width="100">
+          <p>Disco misterioso</p>
+        </a>
+      </div>
+
+      <!-- Objeto 3: Cartel de película -->
+      <div class="col-md-4 mb-4">
+        <a href="#" onclick="mostrarContenido('poster')">
+          <img src="https://cdn-icons-png.flaticon.com/512/483/483356.png" alt="Póster" width="100">
+          <p>Póster olvidado</p>
+        </a>
+      </div>
+    </div>
+
+    <!-- Contenedor para mostrar contenido revelado -->
+    <div id="contenido" class="mt-5 text-center"></div>
+  </div>
+
+  <script>
+    function mostrarContenido(tipo) {
+      let contenido = '';
+      if (tipo === 'libro') {
+        contenido = '<h4>📖 Recomendación literaria:</h4><p>"El nombre del viento" de Patrick Rothfuss — una historia mágica, íntima y profunda.</p>';
+      } else if (tipo === 'vinilo') {
+        contenido = '<h4>🎵 Canción para escuchar:</h4><p>"A Poem for Small Things" - BTS. Una melodía suave que honra lo cotidiano.</p>';
+      } else if (tipo === 'poster') {
+        contenido = '<h4>🎬 Película recomendada:</h4><p>"The Secret Life of Walter Mitty" — para quienes sueñan despiertos y encuentran belleza en los detalles.</p>';
+      }
+
+      document.getElementById('contenido').innerHTML = contenido;
+    }
+  </script>
+</body>
+</html>
