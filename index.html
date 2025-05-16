@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="estilos.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -12,25 +13,82 @@
         <h1>A Poem for Small Things</h1>
         <nav>
             <a href="index.html">Inicio</a>
-            <a href="poemas.html">Poemas</a>
-            <a href="sobre/mi.html">Sobre mí</a>
+            <a href="descubre.html">Descubre</a>
+            <a href="articulos.html">Artículos</a>
+            <a href="sobremi.html">Sobre mí</a>
             <a href="contacto.html">Contacto</a>
         </nav>
     </header>
-    <main>
-        <img src="https://i.pinimg.com/736x/54/a9/99/54a9993fd9880c949da974b788e0d5d2.jpg" alt="Teclado vintage">
-        <h2>Bienvenidos</h2>
-        <p>Bienvenido a este rincón donde las palabras suaves encuentran su lugar.  
-            Aquí celebramos lo invisible, lo mínimo, lo que a veces pasa desapercibido:  
-            una hoja que cae, un suspiro, una mirada silenciosa.
-            </p>
-    </main>
 
+    <div class="contenedor">
+        <main>
+            <img src="https://i.pinimg.com/736x/a0/f1/2f/a0f12f5056132468acc9cec8c1da5e09.jpg" alt="teclado vintage" class="portada ">
+            <section class="seccion-de-bienvenida">
+                <h2>¡Hola Usuario!</h2>
+                <div class="texto-de-bienvenida">
+                    <p>Bienvenido a este rincón donde las palabras suaves encuentran su lugar.</p>
+                    <p>Aquí celebramos lo invisible, lo mínimo, lo que a veces pasa desapercibido:</p>
+                    <p>una hoja que cae, un suspiro, una mirada silenciosa.</p>
+                </div>
+            </section>
+            <section class="explora">
+                <h3>Explora la Biblioteca</h3>
+                <table class="tabla-explora">
+                    <tr>
+                        <td class="celda-explora">
+                            <img src="https://i.pinimg.com/736x/80/fe/9e/80fe9e8ab7315ffaecadd2d528e19ea6.jpg" alt="mood" width="250">
+                        </td>
+                        <td class="celda-explora">
+                            <img src="https://i.pinimg.com/736x/fb/4b/b3/fb4bb3548b174a7200953b06778ccc3d.jpg" alt="epoca" width="250">
+                        </td>
+                        <td class="celda-explora">
+                            <img src="https://i.pinimg.com/736x/d2/5c/c1/d25cc170d6d2193bdb8591090a69f5c2.jpg" alt="situacion" width="250">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="celda-explora">🎭<strong>Por Mood</strong></td>
+                        <td class="celda-explora">🕰<strong>Por Época</strong></td>
+                        <td class="celda-explora">🌆<strong>Por Situación</strong></td>
+                    </tr>
+                </table>
+            </section>
+            <section class="recomendacion">
+                <h3>🎶 Recomendación del día</h3>
+                <div class="cancion">
+                    <img src="https://i.scdn.co/image/ab67616d00001e020838be7c35d7dbb5304b507d" alt="Portada de Lo Que Siento de Cuco" class="imagen1">
+                    <div class="info-cancion">
+                        <h4 class="titulo-de-cancion">Lo Que Siento</h4>
+                        <p class="artista">Cuco</p>
+                        <p class="letras">"Time and time again, I can be feeling real sad
+                    'Cause mi sueño no se ha hecho una realidad..."</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="seccion-texto">
+                <h3>💬 Cita</h3>
+                <div class="bloque-cita">
+                    <img src="https://i.pinimg.com/736x/16/83/74/168374dcca6375efa662a446c4db6197.jpg" alt="disco de vinilo" class="imagen2">
+                    <div class="texto-cita">
+                        <p>"Sé un mejor ser humano primero, luego dedícate a tu arte, ya sea música u otras formas de creación."</p>
+                        <p>- RM de BTS</p>
+                    </div>
+                </div>
+                
+            </section>
+            <section class="boton1">
+                <a href="descubre.html" class="btn btn-primary" target="_blank">Empieza tu descubrimiento</a>
+            </section>
+        </main>
+
+        
+
+    </div>
     <footer>
         <div id="contacto">
-            <p>&copy; 2025 A poem for Small Things</p>
+            <p>© 2025 A Poem for Small Things</p>
         </div>
-
     </footer>
+    
 </body>
 </html>
